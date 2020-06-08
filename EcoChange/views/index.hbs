@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="navbar.js"></script>
+        <title>
+            Eco Change
+        </title>
+        <link rel="icon" href="planet_earth.png" type="image/icon type">
+
+    </head>
+    <body onload='load()'>
+
+
+        <!-- Navigation bar-->
+        <div id="divnav1">
+        </div>
+
+
+       
+        <nav class="navbar navbar-inverse" id="nav2">
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation'>
+                <img id="mainlogo" src="hamburger.png"> <a class="navbar-brand" href="/home">EcoChange <img id='mainlogo' src='planet_earth.png'></img></a>
+            <div class="container-fluid">
+            </button>
+            <div class='collapse navbar-collapse' id='navbarResponsive'>
+                <ul class='navbar-nav ml-auto'>
+                  <a class="nav-link" href="/home">Home</a>
+                  <a class="nav-link" href="/signup">Sign Up</a>
+                  <a class="nav-link" href="/login">Login</a>
+                  <a class="nav-link" href="/aboutus">About Us</a>
+                  </ul>
+                </div>
+            </div>
+          </nav>
+    
+        
+  
+        
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" id="home_carousel_1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4"id="carousel_text">Welcome to Eco Change!</h2>
+                    <p class="lead"></p>
+                </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" id="home_carousel_2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4" id="carousel_text">Help create Awareness about Eco-Friendly Techniques</h2>
+                    <p class="lead"></p>
+                </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" id="home_carousel_3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4"id="carousel_text">Track Your Progress and Connect with people from around the world</h2>
+                    <p class="lead"></p>
+                </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        
+        <!-- Page Content -->
+        <section class="py-5">
+            <div class="container">
+            <h1 class="display-4" id="headings">Haven't joined Eco Change yet?</h1>
+            <p class="lead" id="ending">Join now: <a href="/signup">Sign Up</a></p>
+            <h1 class="display-4" id="headings">Already a member?</h1>
+            <p class="lead" id="ending">View your account: <a href="/login">Login</a></p>
+            <h1 class="display-4" id="headings">Want to know more about us?</h1>
+            <p class="lead" id="ending">Read from here: <a href="/aboutus">About Us</a></p>
+            </div>
+        </section>
+    </body>
+</html>

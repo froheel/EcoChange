@@ -1,0 +1,16 @@
+#mainlogo{
+    height: 25px;
+    width: 25px;
+}
+
+#nav2{
+    display:none;
+}
+
+
+@supports (-ms-ime-align:auto) {
+    #nav2 {
+        display: contents;
+    }
+}
+

@@ -1,0 +1,171 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="bootstrapmincss.css" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="fontawesomemin.css">
+<!--<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" href="newsfeed.css">
+<link rel="stylesheet" href="posts.css">
+<script src="newsfeed.js"></script>
+<link rel="stylesheet" href="progress.css">
+<link rel="stylesheet" href="progressouter.css">
+<script src="progress.js"></script>
+<title>Eco Change</title>
+<link rel="icon" href="planet_earth.png" type="image/icon type">
+
+</head>
+<!------ Include the above in your HEAD tag ---------->
+<body>
+   <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="newsfeed.html" id="brandname">
+                        EcoChange <img id="logo"src="planet_earth.png"/>
+                    </a>
+                </li>
+                <img id="profilelogo" src="profilepic.png"/>
+                <div id="profilename">Ali Khan<img id="onlinelogo" src="profileonline.png"/></div>
+                <li>
+                    <a href="newsfeed.html"> <img id="sidelogo" src="sidepanel_message.png"/> NewsFeed</a>
+                </li>
+                <li>
+                    <a href="progress.html"> <img id="sidelogo" src="sidepanel_progress.png"/> Progress</a>
+                </li>
+                
+                <li>
+                    <a href="userprofile.html"><img id="sidelogo" src="sidepanel_profile.png"/> Profile</a>
+                </li>
+               
+                <li onclick="logout()">
+                    <a href="index.html"> <img id="sidelogo" src="sidepanel_logout.png"/> Logout</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle" onclick="mytoggle()"><img id="logo" src="hamburger.png"/></a>
+                        
+                        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> 
+                        <div class="container bootstrap snippet centered">
+                            <div class="col-md-4">
+                              <!-- START widget-->
+                              <div class="panel widget" id="progstat">
+                                 <div class="panel-body bg-danger text-center">
+                                    
+                                    <h4 class="mt0">Daily Progress</h4>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="progress green">
+                                                <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">90%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ol id="thingsdone" class="listgroup">
+                                        <li class="list-group-item">Planted trees</li>
+                                        <li class="list-group-item">Reduced carbon emissions</li>
+                                        <li class="list-group-item">Healthy Diet</li>
+                                        <li class="list-group-item">Saved Electricity</li>
+                                    </ol>
+                                    
+                                 </div>
+                              </div>
+                              <!-- END widget-->
+                           </div>
+                            <div class="col-md-4">
+                              <!-- START widget-->
+                              <div class="panel widget" id="progstat">
+                                 <div class="panel-body bg-primary text-center">
+                                    
+                                    <div class="row">
+                                    <h4 class="mt0">Weekly Progress</h4>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="progress yellow">
+                                            <span class="progress-left">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <span class="progress-right">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <div class="progress-value">75%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ol id="thingsdone" class="listgroup">
+                                    <li class="list-group-item">Planted trees</li>
+                                    <li class="list-group-item">Reduced carbon emissions</li>
+                                    
+                                </ol>
+                                
+                                   
+                                 </div>
+                              </div>
+                              <!-- END widget-->
+                           </div>
+                            <div class="col-md-4">
+                              <!-- START widget-->
+                              <div class="panel widget"id="progstat">
+                                 <div class="panel-body bg-info text-center">
+                                    <div class="row">
+                                        <h4 class="mt0">Monthly Progress</h4>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="progress green">
+                                                <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">75%</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <ol id="thingsdone" class="listgroup">
+                                        
+                                        <li class="list-group-item">Healthy Diet</li>
+                                        <li class="list-group-item">Saved Electricity</li>
+                                    </ol>
+                                    
+                                 </div>
+                              </div>
+                              <!-- END widget-->
+                           </div>
+                        </div>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+</body>
+     <!-- Menu Toggle Script -->
+    <script>
+    //$("#menu-toggle").click(function(e) {
+      //  e.preventDefault();
+       // $("#wrapper").toggleClass("toggled");
+    //});
+    </script>
+
+</html>

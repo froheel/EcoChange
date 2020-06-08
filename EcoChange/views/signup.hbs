@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="navbar.js"></script>
+        <link rel="stylesheet" href="signup.css">
+        <script type="text/javascript" src="signup.js"></script>
+        <title>
+            Eco Change
+        </title>
+        <link rel="icon" href="planet_earth.png" type="image/icon type">
+
+    </head>
+    <body onload='load()'>
+
+        <!-- Navigation bar-->
+        <div id="divnav1">
+        </div>
+
+            <div class="container"id="mainbody">
+              <div class="row">
+                <div class="col-lg-10 col-xl-9 mx-auto">
+                  <div class="card card-signin flex-row my-5">
+                    <div class="card-img-left d-none d-md-flex">
+                       <!-- Background image for card set in CSS! -->
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Register</h5>
+                      <form class="form-signin" action="/signup" method="POST" autocomplete="off"  onsubmit="return validate()">
+                        <input type="hidden" name="_id" value="{{user._id}}">
+                        <div class="form-label-group">
+                          <input type="text" id="inputUserame" name="username" class="form-control" placeholder="Username" required autofocus oninput="validateName()" value="{{user.username}}">
+                          <label for="inputUserame" id="inp_username">Username</label>
+                          <div class="text-danger">{{user.usernameError}}</div>
+                        </div>
+          
+                        <div class="form-label-group">
+                          <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address" required oninput="validateEmail()" value="{{user.email}}">
+                          <label for="inputEmail" id="inp_email">Email address</label>
+                          <div class="text-danger">{{user.emailError}}</div>
+                        </div>
+                        
+                        <hr>
+          
+                        <div class="form-label-group">
+                          <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required oninput="validatePasswordLength()" value="{{user.password}}">
+                          <label for="inputPassword" id="inp_pass">Password</label>
+                        </div>
+                        
+                        <div class="form-label-group">
+                          <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required oninput="validatePassword()" >
+                          <label for="inputConfirmPassword" id="inp_confirmpass">Confirm password</label>
+                        </div>
+          
+                        <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+                        <hr class="my-4">
+                      </form>
+                             <a class="navbar-brand" href="/home"><img id="mainlogo" src="return.png"/>EcoChange <img id='mainlogo' src='planet_earth.png'></img></a>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    </body>
+
+</html>

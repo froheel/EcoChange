@@ -1,0 +1,25 @@
+{
+  "name": "projversion1",
+  "version": "1.0.0",
+  "description": "Eco Change website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Feza Roheel",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "express-handlebars-paginate": "^1.0.3",
+    "express-session": "^1.17.1",
+    "handlebars-paginate": "^0.1.0",
+    "html": "^1.0.0",
+    "mongoose": "^5.3.4",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "handlebars": "^4.5.0"
+  }
+}

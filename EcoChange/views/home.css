@@ -1,0 +1,34 @@
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#home_carousel_3{
+  background-image: url("home_slider_3.gif");
+}
+
+#home_carousel_2{
+  background-image: url("home_slider_2.gif");
+}
+
+#home_carousel_1{
+  background-image: url("home_slider_1.gif");
+}
+
+#ending{
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+#headings{
+  font-size: 3vw;
+}
+
+#carousel_text{
+  font-size: 4vw;
+}

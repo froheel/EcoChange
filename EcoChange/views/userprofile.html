@@ -1,0 +1,205 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="bootstrapmincss.css" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="fontawesomemin.css">
+<!--<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" href="newsfeed.css">
+<link rel="stylesheet" href="posts.css">
+<script src="newsfeed.js"></script>
+<link rel="stylesheet" href="userprofile.css">
+<title>Eco Change</title>
+<link rel="icon" href="planet_earth.png" type="image/icon type">
+
+</head>
+<!------ Include the above in your HEAD tag ---------->
+<body>
+   <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="newsfeed.html" id="brandname">
+                        EcoChange <img id="logo"src="planet_earth.png"/>
+                    </a>
+                </li>
+                <img id="profilelogo" src="profilepic.png"/>
+                <div id="profilename">Ali Khan<img id="onlinelogo" src="profileonline.png"/></div>
+                <li>
+                    <a href="newsfeed.html"> <img id="sidelogo" src="sidepanel_message.png"/> NewsFeed</a>
+                </li>
+                <li>
+                    <a href="progress.html"> <img id="sidelogo" src="sidepanel_progress.png"/> Progress</a>
+                </li>
+                
+                <li>
+                    <a href="userprofile.html"><img id="sidelogo" src="sidepanel_profile.png"/> Profile</a>
+                </li>
+               
+                <li onclick="logout()">
+                    <a href="index.html"> <img id="sidelogo" src="sidepanel_logout.png"/> Logout</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle" onclick="mytoggle()"><img id="logo" src="hamburger.png"/></a>
+                        
+
+                        <div class="em-background-box text-white content">
+                            <div class="container-fluid">
+                              <div class="text-center em-background-box-content">
+                                <ul class="list-inline">
+                                  <li>
+                                    <a href="#" class="tip" title="Add friend">
+                                        <img id="profilemain" src="profilepic.png"/>
+                                    </a>
+                                  </li>
+                                  
+                                </ul>
+                          
+                                <h1 class="thin">Ali Khan</h1>
+                                <h4>
+                                  <a href="#" class="tip" title="Option">
+                                    <img class="img-circle" id="logo"src="map.png">
+                                  </a>
+                                  <span class="thin">Medellin, Colombia</span>
+                                </h4>
+                          
+                                <div class="row">
+                                  <div class="col-md-10 col-md-offset-1">
+                                    <div class="semi-well-dk em-background-box-actions">
+                                      <div class="row">
+                                        <div class="col-md-7 push-bottom-sm">
+                                          <ul class="list-inline no-margin v-mid-row">
+                                            <li>
+                                              <a href="#" class="tip" title="Option">
+                                                <img class="img-circle" src="https://bootdey.com/img/Content/icons/32/PNG/32/clock.png">
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a href="#" class="tip" title="Option">
+                                                <img class="img-circle" src="https://bootdey.com/img/Content/icons/32/PNG/32/photo.png">
+                                              </a>
+                                            </li>
+                                            <li>
+                                              <a href="#" class="tip" title="Option">
+                                                <img class="img-circle" src="https://bootdey.com/img/Content/icons/32/PNG/32/cloud-up.png">
+                                              </a>
+                                            </li>
+                                            <li class="text-center">
+                                              <h5 class="base-header">Following</h5>
+                                              <h4 class="base-header major">4,884</h4>
+                                            </li>
+                                          </ul>
+                                        </div>
+                          
+                                        <div class="col-md-5">
+                                          <ul class="list-inline">
+                                            <li class="option">
+                                              <img class="img-circle" src="https://bootdey.com/img/Content/icons/32/PNG/32/rocket.png">
+                                              
+                                            </li>
+                                            <li class="text-center">
+                                              <h5 class="base-header">Score</h5>
+                                              <h4 class="base-header major">100</h4>
+                                            </li>
+                                            <li  class="option">
+                                              <img class="img-circle" src="https://bootdey.com/img/Content/icons/32/PNG/32/packman.png">
+    
+                                            </li>
+                                            <li class="text-center">
+                                              <h5 class="base-header">Followers</h5>
+                                              <h4 class="base-header major">+84</h4>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                    
+                        
+                          <!--post1-->
+                        <div class="container bootstrap snippet" id="postbyuser">
+                          <div class="col-sm-8">
+                              <div class="panel panel-white post panel-shadow">
+                                  <div class="post-heading">
+                                      <div class="pull-left image">
+                                          <img src="profilepic.png" class="img-circle avatar" alt="user profile image">
+                                      </div>
+                                      <div class="pull-left meta">
+                                          <div class="title h5">
+                                              <a href="#"><b>Ali Khan</b></a>
+                                              made a post.
+                                          </div>
+                                          <h6 class="text-muted time">1 week ago</h6>
+                                      </div>
+                                  </div> 
+                                  <div class="post-description"> 
+                                      <p>I started recyclying today. I reused the old card board boxes in my room and made a home with it for my birds. They love it so much #recylce #reuse</p>
+                                  </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>   
+
+                      <!--end of post1-->
+
+                       <!--post1-->
+                       <div class="container bootstrap snippet" id="postbyuser">
+                        <div class="col-sm-8">
+                            <div class="panel panel-white post panel-shadow">
+                                <div class="post-heading">
+                                    <div class="pull-left image">
+                                        <img src="profilepic.png" class="img-circle avatar" alt="user profile image">
+                                    </div>
+                                    <div class="pull-left meta">
+                                        <div class="title h5">
+                                            <a href="#"><b>Ali Khan</b></a>
+                                            made a post.
+                                        </div>
+                                        <h6 class="text-muted time">1 month ago</h6>
+                                    </div>
+                                </div> 
+                                <div class="post-description"> 
+                                    <p>I planted a tree today</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <!--end of post1-->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+</body>
+     <!-- Menu Toggle Script -->
+    <script>
+    //$("#menu-toggle").click(function(e) {
+      //  e.preventDefault();
+       // $("#wrapper").toggleClass("toggled");
+    //});
+    </script>
+
+</html>

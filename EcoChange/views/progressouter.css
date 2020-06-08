@@ -1,0 +1,39 @@
+.widget .panel, .widget.panel {
+  overflow: hidden;
+}
+
+.widget {
+  margin-bottom: 20px;
+  border: 0;
+}
+
+.bg-danger {
+  background-color: greenyellow;
+  color: #fff!important;
+}
+
+.bg-info {
+  background-color: #23b7e5;
+  color: #fff!important;
+}
+
+.bg-primary {
+  background-color: #5d9cec;
+  color: #fff!important;
+}
+.centered {
+   align-content: center;
+}
+
+#thingsdone{
+    margin-top: 10%;
+    margin-left: -10%;
+    align-content: center;
+    float: left;
+    color:rgba(21, 46, 9, 0.753);
+}
+
+#progstat{
+    max-width: 300px;
+    max-height: 600px;
+}

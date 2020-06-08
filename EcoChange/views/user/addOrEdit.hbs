@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Eco Change</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+    <body class="bg-info">
+        <div class="row">
+            <div class="col-md-6 offset-md-3" style="background-color: #fff;margin-top: 25px;padding:20px;">
+                <h3>{{viewTitle}}</h3>
+
+    <form action="/user" method="POST" autocomplete="off">
+        <input type="hidden" name="_id" value="{{user._id}}">
+        <div class="form-group" >
+            <label>User Name</label>
+            <input type="text" class="form-control" name="username" placeholder="User Name" value="{{user.username}}">
+            <div class="text-danger">
+                {{user.usernameError}}</div>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email" placeholder="Email" value="{{user.email}}" >
+            <div class="text-danger">
+                {{user.emailError}}</div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Password</label>
+                <input type="text" class="form-control" name="password" placeholder="Password" value="{{user.password}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+            <a class="btn btn-secondary" href="/user/list"><i class="fa fa-list-alt"></i> View All</a>
+        </div>
+    </form>
+            </div>
+        </div>
+
+    </body>
+
+</html>
+
+

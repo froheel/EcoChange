@@ -1,0 +1,162 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="bootstrapmincss.css" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="fontawesomemin.css">
+<!--<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" href="newsfeed.css">
+<link rel="stylesheet" href="posts.css">
+<script src="newsfeed.js"></script>
+<title>Eco Change</title>
+<link rel="icon" href="planet_earth.png" type="image/icon type">
+
+</head>
+<!------ Include the above in your HEAD tag ---------->
+<body>
+   <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="newsfeed.html" id="brandname">
+                        EcoChange <img id="logo"src="planet_earth.png"/>
+                    </a>
+                </li>
+                <img id="profilelogo" src="profilepic.png"/>
+                <div id="profilename">Ali Khan<img id="onlinelogo" src="profileonline.png"/></div>
+                <li>
+                    <a href="newsfeed.html"> <img id="sidelogo" src="sidepanel_message.png"/> NewsFeed</a>
+                </li>
+                <li>
+                    <a href="progress.html"> <img id="sidelogo" src="sidepanel_progress.png"/> Progress</a>
+                </li>
+                
+                <li>
+                    <a href="userprofile.html"><img id="sidelogo" src="sidepanel_profile.png"/> Profile</a>
+                </li>
+               
+                <li onclick="logout()">
+                    <a href="index.html"> <img id="sidelogo" src="sidepanel_logout.png"/> Logout</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle" onclick="mytoggle()"><img id="logo" src="hamburger.png"/></a>
+                        
+                        <h1 id="mainheading"><img id="mainheadinglogo" src="sidepanel_message.png"/></h1>
+
+			            <!--post1-->
+                        <div class="container bootstrap snippet" id="postbyuser">
+                            <div class="col-sm-8">
+                                <div class="panel panel-white post panel-shadow">
+                                    <div class="post-heading">
+                                        <div class="pull-left image">
+                                            <img src="https://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">
+                                        </div>
+                                        <div class="pull-left meta">
+                                            <div class="title h5">
+                                                <a href="#"><b>Ryan Haywood</b></a>
+                                                made a post.
+                                            </div>
+                                            <h6 class="text-muted time">1 minute ago</h6>
+                                        </div>
+                                    </div> 
+                                    <div class="post-description"> 
+                                        <p>I started recyclying today. I reused the old card board boxes in my room and made a home with it for my birds. They love it so much #recylce #reuse</p>
+                                        <div class="stats">
+                                            <a href="#" class="btn btn-default stat-item" onclick="support()">
+                                                <img id="iconstodisplay" src="like.png"></img>
+                                                <span id="supports">2</span>
+                                            </a>
+                                            <!--a href="#" class="btn btn-default stat-item">
+                                                <i class="fa fa-share icon"></i>12
+                                            </a>-->
+                                        </div>
+                                    </div>
+                                    <div class="post-footer">
+                                        <div class="input-group"> 
+                                            <input class="form-control"id="Inputcomment" placeholder="Add a comment" type="text">
+                                            <span button class="input-group-addon" onclick="comment()">
+                                                <a href="#"><img id="iconstodisplay" src="comment.png"/></a>  
+                                            </span>
+                                        </div>
+                                        <ul class="comments-list" >
+
+                                            <div id="Addcomment"></div>
+                                            
+                                            
+                                            <li class="comment" id="maincommentslist">
+                                                <a class="pull-left" href="#">
+                                                    <img class="avatar" src="https://bootdey.com/img/Content/user_1.jpg" alt="avatar">
+                                                </a>
+                                                <div class="comment-body">
+                                                    <div class="comment-heading">
+                                                        <h4 class="user">Gavino Free</h4>
+                                                        <h5 class="time">5 minutes ago</h5>
+                                                    </div>
+                                                    <p>Sure, oooooooooooooooohhhhhhhhhhhhhhhh</p>
+                                                </div>
+                                                <ul class="comments-list">
+                                                    <li class="comment">
+                                                        <a class="pull-left" href="#">
+                                                            <img class="avatar" src="https://bootdey.com/img/Content/user_3.jpg" alt="avatar">
+                                                        </a>
+                                                        <div class="comment-body">
+                                                            <div class="comment-heading">
+                                                                <h4 class="user">Ryan Haywood</h4>
+                                                                <h5 class="time">3 minutes ago</h5>
+                                                            </div>
+                                                            <p>Relax my friend</p>
+                                                        </div>
+                                                    </li> 
+                                                    <li class="comment">
+                                                        <a class="pull-left" href="#">
+                                                            <img class="avatar" src="https://bootdey.com/img/Content/user_2.jpg" alt="avatar">
+                                                        </a>
+                                                        <div class="comment-body">
+                                                            <div class="comment-heading">
+                                                                <h4 class="user">Gavino Free</h4>
+                                                                <h5 class="time">3 minutes ago</h5>
+                                                            </div>
+                                                            <p>Ok, cool.</p>
+                                                        </div>
+                                                    </li> 
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+
+                        <!--end of post1-->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+</body>
+     <!-- Menu Toggle Script -->
+    <script>
+    //$("#menu-toggle").click(function(e) {
+      //  e.preventDefault();
+       // $("#wrapper").toggleClass("toggled");
+    //});
+    </script>
+
+</html>

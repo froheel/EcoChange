@@ -1,0 +1,13 @@
+.card-signin .card-img-left {
+    width: 45%;
+    /* Link to your background image using in the property below! */
+    background: scroll center url("signupimage.png");
+    background-size: cover;
+  }
+
+  #mainbody{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

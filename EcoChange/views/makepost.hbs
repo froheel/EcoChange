@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="signup.css">
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="publish.css">
+        <title>
+            Eco Change
+        </title>
+        <link rel="icon" href="planet_earth.png" type="image/icon type">
+    </head>
+    <body onload='load()' id="postbody">
+      
+
+        <div class="container" id="mainbody">
+            <div class="row">
+              <div class="col-lg-10 col-xl-9 mx-auto">
+                <div class="card card-signin flex-row my-5">
+                  <div class="card-body">
+                    <a class="navbar-brand" href="/newsfeed"><img id="mainlogo" src="return.png"/>EcoChange <img id='mainlogo' src='planet_earth.png'></img></a>
+                    <h5 class="card-title text-center">Make Post</h5>
+
+                    <form action="/makepost" method="POST">
+                    <input type="hidden" name="_id" value="{{post._id}}">
+                    <textarea class="form-control custom-control" rows="5" style="resize:none"
+                    name="content" placeholder="Content" value="{{post.content}}">
+                    </textarea>
+                    <div class="text-danger">
+                    {{post.contentError}}</div>    
+                    <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Post</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </body>
+
+</html>
