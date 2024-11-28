@@ -16,7 +16,7 @@
     "express-session": "^1.17.1",
     "handlebars-paginate": "^0.1.0",
     "html": "^1.0.0",
-    "mongoose": "^5.3.4",
+    "mongoose": "^5.7.5",
     "nodemon": "^2.0.4"
   },
   "devDependencies": {
